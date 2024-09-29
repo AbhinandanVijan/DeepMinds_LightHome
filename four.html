@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insurance Plans</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="four.css">
+</head>
+<body>
+    <!-- Header Section -->
+  <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <span>
+        <img src="img.jpeg" style="height: 40px;" alt="Healthcare Solution Logo" height="50">
+        <span style="font-size: 22px; font-weight: 700; color: rgb(57, 114, 155);;">LIGHTHOUSE.AI</span>
+        <!-- <img src="heading.jpeg" style="height: 40px;" alt="Healthcare Solution Logo" height="50"> -->
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./compare.html">Compare</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./help.html">Learn</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Languages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="languageDropdown">
+            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="#">Spanish</a>
+            <a class="dropdown-item" href="#">Arabic</a>
+            <a class="dropdown-item" href="#">Urdu</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+    <!-- Filter Section -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-12" >
+                <h3 class="text-center">Find Your Health Insurance Plan</h3>
+                <div class="container mt-4">
+                    <div class="row" style="border: 1px solid #ddd; border-radius: 8px; padding: 16px;">
+                        <div class="col-12">
+                            <h4>Filters</h4>
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
+                            <label for="filterIncome">Metal Type</label>
+                            <select class="form-control" id="filterIncome">
+                                <option>Any</option>
+                                <option>Bronze</option>
+                                <option>Silver</option>
+                                <option>Gold</option>
+                                <option>Platinum</option>
+                            </select>
+                        </div>
+                
+                        <div class="col-md-4 mb-3">
+                            <label for="filterCoverage">Coverage Type</label>
+                            <select class="form-control" id="filterCoverage">
+                                <option>All</option>
+                                <option>Dental</option>
+                                <option>Vision</option>
+                                <option>General Healthcare</option>
+                            </select>
+                        </div>
+                
+                        <div class="col-md-4 mb-3">
+                            <label for="filterProviders">Providers</label>
+                            <select class="form-control" id="filterProviders">
+                                <option>All</option>
+                                <option>United Health Insurance</option>
+                                <option>Independent Health</option>
+                                <option>NY Health</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Health Insurance Cards Section -->
+    <div class="container my-4">
+        <div class="row">
+            <!-- First Row of Cards -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Health Plan A</h5>
+                        <p class="card-text">Affordable coverage for individuals and families.</p>
+                        <ul>
+                            <li>Monthly Cost: $50</li>
+                        </ul>
+                        <h5 class="card-title">Plan Highlights:</h5>
+                        <div class="plan-highlights">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-tooth highlight-icon"></i> Dental
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-glasses highlight-icon"></i> Eyewear
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-deaf highlight-icon"></i> Hearing aid
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-laptop-medical highlight-icon"></i> Telehealth
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a style="float: right;" href="#" class="btn btn-primary">View Plan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Health Plan B</h5>
+                        <p class="card-text">Comprehensive coverage with a low monthly premium.</p>
+                        <ul>
+                            <li>Monthly Cost: $75</li>
+                        </ul>
+                        <h5 class="card-title">Plan Highlights:</h5>
+                        <div class="plan-highlights">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-tooth highlight-icon"></i> Dental
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-glasses highlight-icon"></i> Eyewear
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-deaf highlight-icon"></i> Hearing aid
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-laptop-medical highlight-icon"></i> Telehealth
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a style="float: right;" href="#" class="btn btn-primary">View Plan</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Second Row of Cards -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Health Plan D</h5>
+                        <p class="card-text">Low-cost plan for young adults.</p>
+                        <ul>
+                            <li>Monthly Cost: $45</li>
+                        </ul>
+                        <h5 class="card-title">Plan Highlights:</h5>
+                        <div class="plan-highlights">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-tooth highlight-icon"></i> Dental
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-glasses highlight-icon"></i> Eyewear
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-deaf highlight-icon"></i> Hearing aid
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-laptop-medical highlight-icon"></i> Telehealth
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a style="float: right;" href="#" class="btn btn-primary">View Plan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Health Plan E</h5>
+                        <p class="card-text">Premium healthcare plan for seniors.</p>
+                        <ul>
+                            <li>Monthly Cost: $100</li>
+                        </ul>
+                        <h5 class="card-title">Plan Highlights:</h5>
+                        <div class="plan-highlights">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-tooth highlight-icon"></i> Dental
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-glasses highlight-icon"></i> Eyewear
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-deaf highlight-icon"></i> Hearing aid
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-laptop-medical highlight-icon"></i> Telehealth
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a style="float: right;" href="#" class="btn btn-primary">View Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5" style="padding-bottom: 36px;">
+        <!-- Inline Chatbox -->
+        <div id="chatbox" class="chatbox-inline">
+            <div class="chatbox-container">
+                <div class="chatbox-header">
+                    <h5>Chat with us</h5>
+                </div>
+                <div class="chatbox-body">
+                    <div class="chatbox-message bot-message">
+                        Hello! How can I assist you today?
+                    </div>
+                </div>
+                <div class="chatbox-footer">
+                    <input type="text" id="chatbox-input" class="form-control" placeholder="Type your message...">
+                    <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FontAwesome Icon Library -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <script>
+        function autoReply() {
+            const chatInput = document.getElementById('chatbox-input');
+            const chatBody = document.querySelector('.chatbox-body');
+            const newMessage = document.createElement('div');
+            newMessage.classList.add('chatbox-message', 'bot-message');
+            newMessage.textContent = 'Medicaid provides health coverage to millions, we understand your requirements and updated the recommendations for you. Please refer the list above \n How can I help you further you can ask further filters of your choice!';
+            chatBody.appendChild(newMessage);
+            chatInput.value = '';
+            chatBody.scrollTop = chatBody.scrollHeight;  // Scroll to the bottom
+        }
+
+        function sendMessage() {
+            const chatInput = document.getElementById('chatbox-input');
+            const messageText = chatInput.value;
+    
+            if (messageText.trim() === '') return;
+    
+            const chatBody = document.querySelector('.chatbox-body');
+            const newMessage = document.createElement('div');
+            newMessage.classList.add('chatbox-message', 'user-message');
+            newMessage.textContent = messageText;
+    
+            chatBody.appendChild(newMessage);
+            chatInput.value = '';
+            chatBody.scrollTop = chatBody.scrollHeight;  // Scroll to the bottom
+            setTimeout(() => autoReply(), 2000)
+            
+        }
+    </script>
+</body>
+</html>

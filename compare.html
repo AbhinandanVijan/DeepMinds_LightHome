@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Comparison Table with Search Fields</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <span>
+        <img src="img.jpeg" style="height: 40px;" alt="Healthcare Solution Logo" height="50">
+        <span style="font-size: 22px; font-weight: 700; color: rgb(57, 114, 155);;">LIGHTHOUSE.AI</span>
+        <!-- <img src="heading.jpeg" style="height: 40px;" alt="Healthcare Solution Logo" height="50"> -->
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./first.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./compare.html">Compare</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./help.html">Learn</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Languages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="languageDropdown">
+            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="#">Spanish</a>
+            <a class="dropdown-item" href="#">Arabic</a>
+            <a class="dropdown-item" href="#">Urdu</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+<div class="container mt-5">
+    <h2 class="text-center">Compare Insurance Plans</h2>
+
+    <!-- Insurance Comparison Table with Search Fields -->
+    <table id="insurance-table" class="table table-bordered table-hover text-center">
+        <thead class="thead-light">
+            <tr>
+                <th>Properties</th>
+                <th>
+                    Insurance Plan A
+                    <input type="text" class="form-control mt-2" id="search-plan-a" placeholder="Search Plan A" onkeyup="filterTable(1)">
+                </th>
+                <th>
+                    Insurance Plan B
+                    <input type="text" class="form-control mt-2" id="search-plan-b" placeholder="Search Plan B" onkeyup="filterTable(2)">
+                </th>
+                <th>
+                    Insurance Plan C
+                    <input type="text" class="form-control mt-2" id="search-plan-c" placeholder="Search Plan C" onkeyup="filterTable(3)">
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Cost (per month)</strong></td>
+                <td>$100</td>
+                <td>$150</td>
+                <td>$120</td>
+            </tr>
+            <tr>
+                <td><strong>Dental</strong></td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>❌</td>
+            </tr>
+            <tr>
+                <td><strong>Eye Care</strong></td>
+                <td>✔</td>
+                <td>❌</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <td><strong>Hearing Aid</strong></td>
+                <td>❌</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <td><strong>Telehealth</strong></td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>❌</td>
+            </tr>
+            <tr>
+                <td><strong>Primary Care Coverage (in $)</strong></td>
+                <td>$500</td>
+                <td>$600</td>
+                <td>$450</td>
+            </tr>
+            <tr>
+                <td><strong>Special Care Coverage (in $)</strong></td>
+                <td>$700</td>
+                <td>$800</td>
+                <td>$600</td>
+            </tr>
+            <tr>
+                <td><strong>Emergency Coverage (in $)</strong></td>
+                <td>$1,200</td>
+                <td>$1,500</td>
+                <td>$1,000</td>
+            </tr>
+            <tr>
+                <td><strong>Transportation</strong></td>
+                <td>✔</td>
+                <td>❌</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <td><strong>Lab Services</strong></td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- JavaScript to filter columns -->
+<script>
+    function filterTable(column) {
+        const searchA = document.getElementById('search-plan-a').value.toLowerCase();
+        const searchB = document.getElementById('search-plan-b').value.toLowerCase();
+        const searchC = document.getElementById('search-plan-c').value.toLowerCase();
+        
+        const table = document.getElementById('insurance-table');
+        const rows = table.getElementsByTagName('tr');
+
+        for (let i = 1; i < rows.length; i++) { // Start from 1 to skip the header
+            const tdA = rows[i].getElementsByTagName('td')[1];
+            const tdB = rows[i].getElementsByTagName('td')[2];
+            const tdC = rows[i].getElementsByTagName('td')[3];
+
+            if (tdA && tdB && tdC) {
+                const txtValueA = tdA.textContent.toLowerCase();
+                const txtValueB = tdB.textContent.toLowerCase();
+                const txtValueC = tdC.textContent.toLowerCase();
+
+                if (
+                    (txtValueA.indexOf(searchA) > -1 || searchA === '') &&
+                    (txtValueB.indexOf(searchB) > -1 || searchB === '') &&
+                    (txtValueC.indexOf(searchC) > -1 || searchC === '')
+                ) {
+                    rows[i].style.display = '';
+                } else {
+                    rows[i].style.display = 'none';
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

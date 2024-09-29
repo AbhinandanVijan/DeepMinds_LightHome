@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Healthcare Insurance Guidance</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <span>
+        <img src="img.jpeg" style="height: 40px;" alt="Healthcare Solution Logo" height="50">
+        <span style="font-size: 22px; font-weight: 700; color: rgb(57, 114, 155);;">LIGHTHOUSE.AI</span>
+        <!-- <img src="heading.jpeg" style="height: 40px;" alt="Healthcare Solution Logo" height="50"> -->
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./compare.html">Compare</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./help.html">Learn</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Languages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="languageDropdown">
+            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="#">Spanish</a>
+            <a class="dropdown-item" href="#">Arabic</a>
+            <a class="dropdown-item" href="#">Urdu</a>
+          </div>
+        </li>
+        <!-- <li class="nav-item">
+          <button class="btn btn-primary">Login/Sign Up</button>
+        </li> -->
+        <!-- <li class="nav-item">
+          <button class="btn btn-outline-dark">A+</button>
+          <button class="btn btn-outline-dark">A-</button>
+          <button class="btn btn-outline-dark">🔊</button>
+        </li> -->
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero bg-light text-center py-5">
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="card selection-card p-4 d-flex justify-content-center">
+            <h3 class="card-title text-center">Select Family Details</h3>
+            <p class="text-center">Please choose the number of people and their age:</p>
+            
+            <!-- Dropdown for Number of People -->
+            <div class="form-group">
+                <label for="numberOfPeople">Number of People</label>
+                <select class="form-control" id="numberOfPeople">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+
+            <!-- Dropdown for Age -->
+            <div class="form-group">
+                <label for="ageRange">Select Age Ranges</label>
+                <select class="form-control" id="ageRange">
+                    <option value="10">10-20</option>
+                    <option value="20">20-30</option>
+                    <option value="30">30-40</option>
+                    <option value="40">40-50</option>
+                    <option value="50">50-60</option>
+                    <option value="60">60-70</option>
+                    <option value="70">70-80</option>
+                    <option value="80">80-90</option>
+                    <option value="90">90-100</option>
+                </select>
+                    &nbsp;
+                    &nbsp;
+                    <div class="checkbox-wrapper">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" id="agree" name="agree">
+                            <span class="checkmark"></span>
+                            Please check the if you don't have any disabilities. 
+                        </label>
+                    </div>
+
+                <div class="contact-button mt-3">
+                    <a href="./four.html" class="btn btn-primary">Submit</a>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+  <!-- Step-by-Step Process Section -->
+  <section class="steps-section py-5">
+    <div class="container text-center">
+      <h2>How It Works</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <h4>Tell us about your health needs</h4>
+          <p>Provide your health details so we can assist you better.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>We match you with the best insurance options</h4>
+          <p>We compare the best plans suited for your needs.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Compare and enroll in a plan</h4>
+          <p>Choose a plan and get enrolled easily and securely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer Section -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#" class="text-white">FAQs</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Contact Us</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+      </ul>
+      <div class="social-icons mt-3">
+        <a href="#" class="text-white mx-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" height="30">
+        </a>
+        <a href="#" class="text-white mx-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" height="30">
+        </a>
+        <a href="#" class="text-white mx-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" height="30">
+        </a>  
+      </div>
+      <div class="newsletter mt-3">
+        <input type="email" class="form-control d-inline-block w-auto" placeholder="Enter your email for updates">
+        <button class="btn btn-primary">Subscribe</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

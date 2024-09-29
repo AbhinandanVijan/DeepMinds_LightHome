@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sick Visits Questions</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      margin-top: 50px;
+      max-width: 65%;
+    }
+
+    .btn-custom {
+      background-color: #007bff;
+      color: white;
+      margin: 10px 0;
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      text-align: left;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .btn-custom:hover {
+      background-color: #0056b3;
+      color: white;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .question-group {
+      margin-bottom: 20px;
+    }
+
+    .question-group label {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .btn-skip {
+      background-color: #6c757d;
+      color: white;
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      text-align: left;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .btn-skip:hover {
+      background-color: #5a6268;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+   <!-- Header Section -->
+   <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <span>
+        <img src="img.jpeg" style="height: 40px;" alt="Healthcare Solution Logo" height="50">
+        <span style="font-size: 22px; font-weight: 700; color: rgb(57, 114, 155);;">LIGHTHOUSE.AI</span>
+        <!-- <img src="heading.jpeg" style="height: 40px;" alt="Healthcare Solution Logo" height="50"> -->
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Compare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./help.html">Learn</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Languages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="languageDropdown">
+            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="#">Spanish</a>
+            <a class="dropdown-item" href="#">Arabic</a>
+            <a class="dropdown-item" href="#">Urdu</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <h2>Now we are proceeding towards sick visit questionaries</h2>
+
+    <div class="question-group">
+      <label for="medication-list">Do you have a valid health insurance?</label>
+      <a href="./yes.html" class="btn btn-custom">Yes</a>
+      <a href="./second.html" class="btn btn-custom">No</a>
+      <a href="./yes.html" class="btn btn-custom">Skip for Now</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Healthcare Solution &copy; 2024 | Privacy Policy | Terms of Service</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
